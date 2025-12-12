@@ -2,3 +2,14 @@
 .Rhistory
 .RData
 .Ruserdata
+/data/canada-basegrids
+/data/bc-parks-pol
+data/BCParks_obs_unique_with_BigTeams_flagged.RDS
+data/iNaturalist/BCParks_obs_unique_with_BigTeams_flagged.dbf
+data/iNaturalist/BCParks_obs_unique_with_BigTeams_flagged.prj
+data/iNaturalist/BCParks_obs_unique_with_BigTeams_flagged.shp
+data/iNaturalist/BCParks_obs_unique_with_BigTeams_flagged.shx
+data/iNaturalist/obs.dbf
+data/iNaturalist/obs.prj
+data/iNaturalist/obs.shp
+data/iNaturalist/obs.shx
