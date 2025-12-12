@@ -7,6 +7,7 @@ hl_discoveries1_ui = function(){
   
   "hl_discoveries1" = story_section(
     title = "First of Many!",
+    position = "right",
     content = list(
       p(HTML("This beautiful fungus (<i>Lachnum gaultheriae</i>) was discovered in the Hakai Luxvbalis Conservancy for the first time in Canada on iNaturalist by <a href='https://www.inaturalist.org/people/eloraa'>Elora Adamson</a>. Since then, four more observations have been made this summer, with likely many more to come!")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/519425982/large.jpg", 
@@ -65,6 +66,7 @@ hl_discoveries3_ui = function(){
   
   "hl_discoveries3" = story_section(
     title = "Treehopper and her babies!",
+    position = "right",
     content = list(
       p(HTML("This Treehopper (<i>Platycotis maritima</i>) was observed for only the second time ever on iNaturalist, spotted by <a href = 'https://inaturalist.ca/people/abbyhyde'>Abby Hyde</a> in Lower Tsitika River Provincial Park. Since then, it has been seen many more times and now has 36 observations made. The puncture holes on the stem are carefully crafted feeding spots made by the mama hopper. Previously thought to feed on hemlock, this species actually prefers red alder. When her babies hatch, she guides them to these prepared feeding grounds.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/552544506/large.jpg", 

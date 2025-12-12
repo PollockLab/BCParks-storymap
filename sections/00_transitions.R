@@ -16,11 +16,11 @@ transition_to_surprises_ui = function(){
 
 transition_to_surprises_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() |>
-    fly_to(center = center.point,
-           zoom = 2,
-           pitch = 0,
-           bearing = 0)
+    clear_markers() #|>
+    # fly_to(center = center.point,
+    #        zoom = 6,
+    #        pitch = 0,
+    #        bearing = 0)
 }
 
 
@@ -30,7 +30,9 @@ transition_to_looks_ui = function(){
   story_section(
     title = "2. Looks can be deceiving!",
     content = list(
-      p("On iNaturalist, you’re never alone in identifying species. If you’re not sure what you’ve found, someone else is always there to help! Across B.C.’s protected areas, more than 13,000 contributors have helped confirm species identifications. <br> Here are a few examples of species that aren’t quite what they seem at first glance:")
+      p(HTML("On iNaturalist, you’re never alone in identifying species. If you’re not sure what you’ve found, someone else is always there to help!")),
+      p(HTML("Across B.C.’s protected areas, <b>more than 13,000 contributors</b> have helped confirm species identifications.")),
+      p(HTML("Here are a few examples of species that aren’t quite what they seem at first glance:"))
     ),
     position = "center",
     width = 600,
@@ -40,11 +42,11 @@ transition_to_looks_ui = function(){
 
 transition_to_looks_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() |>
-    fly_to(center = center.point,
-           zoom = 2,
-           pitch = 0,
-           bearing = 0)
+    clear_markers() #|>
+    # fly_to(center = center.point,
+    #        zoom = 6,
+    #        pitch = 0,
+    #        bearing = 0)
 }
 
 
@@ -54,7 +56,10 @@ transition_to_debut_ui = function(){
   story_section(
     title = "3. Making its Debut!",
     content = list(
-      p(HTML("There have been many exciting new records of species made this year on the iNaturalist platform. Our field team alone contributed over 100 observations of species that had never before been recorded on iNaturalist in B.C., in Canada, or even anywhere in the world. Even more notably, some of these observations are not just new to iNaturalist, but they represent completely new scientific records! Here are a few highlights from 2025: "))
+      p(HTML("There have been many exciting new records of species made this year on the iNaturalist platform.")),
+      p(HTML("Our field team alone contributed <b>over 100 observations of species that had never before been recorded on iNaturalist</b> in B.C., in Canada, or even <i>anywhere in the world</i>.")),
+      p(HTML("Even more notably, some of these observations are not just new to iNaturalist, but they represent completely new scientific records!")),
+      p(HTML("<b>Here are a few highlights from 2025:</b>"))
     ),
     position = "center",
     width = 600,
@@ -64,11 +69,11 @@ transition_to_debut_ui = function(){
 
 transition_to_debut_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() |>
-    fly_to(center = center.point,
-           zoom = 2,
-           pitch = 0,
-           bearing = 0)
+    clear_markers() #|>
+    # fly_to(center = center.point,
+    #        zoom = 4,
+    #        pitch = 0,
+    #        bearing = 0)
 }
 
 # 4. Filling in the gaps! ------------------------------------------------
@@ -87,11 +92,11 @@ transition_to_gaps_ui = function(){
 
 transition_to_gaps_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() |>
-    fly_to(center = center.point,
-           zoom = 2,
-           pitch = 0,
-           bearing = 0)
+    clear_markers() #|>
+    # fly_to(center = center.point,
+    #        zoom = 4,
+    #        pitch = 0,
+    #        bearing = 0)
 }
 
 # 5. Discoveries can be contagious!  -------------------------------------
@@ -110,11 +115,11 @@ transition_to_discoveries_ui = function(){
 
 transition_to_discoveries_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() |>
-    fly_to(center = center.point,
-           zoom = 2,
-           pitch = 0,
-           bearing = 0)
+    clear_markers() #|>
+    # fly_to(center = center.point,
+    #        zoom = 4,
+    #        pitch = 0,
+    #        bearing = 0)
   }
 
 # 6. Great Shots! --------------------------------------------------------
@@ -133,9 +138,9 @@ transition_to_greatshots_ui = function(){
 
 transition_to_greatshots_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() |>
-    fly_to(center = center.point,
-           zoom = 2,
-           pitch = 0,
-           bearing = 0)
+    clear_markers() #|>
+    # fly_to(center = center.point,
+    #        zoom = 4,
+    #        pitch = 0,
+    #        bearing = 0)
 }

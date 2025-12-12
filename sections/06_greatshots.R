@@ -123,6 +123,7 @@ hl_greatshots5_ui = function(){
   
   "hl_greatshots5" = story_section(
     title = "Making a splash!",
+    position = "right",
     content = list(
       p(HTML("This incredible shot of these two Pacific White-sided Dolphins was taken by <a href='https://www.inaturalist.ca/people/claudiasnaturejournal'>Claudia Cridge</a> in Porteau Cove Provincial Park.")),
       img(src = "https://static.inaturalist.org/photos/473056137/large.jpeg", 

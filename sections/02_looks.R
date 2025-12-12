@@ -36,6 +36,7 @@ hl_looks2_ui = function(){
   
   "hl_looks2" = story_section(
     title = "Not just another earthworm! ",
+    position = "right",
     content = list(
       p(HTML("Think all earthworms are the same? Think again! British Columbia is actually home to several species. This Woodland White Worm is an introduced species to the region and is the first iNaturalist observation made in British Columbia, spotted in Claud Elliot Provincial Park by <a href ='https://inaturalist.ca/people/shawnb2'>Shawn Brescia</a>.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/527901006/large.jpg", 
@@ -79,7 +80,7 @@ hl_looks3_server = function(){
   maplibre_proxy("map") |> 
     clear_markers() |>
     fly_to(center = c(-126.5109790001, 50.3134729999),
-           zoom = 10,
+           zoom = 13,
            pitch = 0,
            bearing = 0) |>
     add_markers(c(-126.5109790001, 50.3134729999), color =  marker_col)

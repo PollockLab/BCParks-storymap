@@ -22,7 +22,7 @@ hl_gaps1_server = function(){
   maplibre_proxy("map") |> 
     clear_markers() |>
     fly_to(center = c(-118.351128, 49.014248),
-           zoom = 10,
+           zoom = 12,
            pitch = 0,
            bearing = 0) |>
     add_markers(c(-118.351128, 49.014248), color =  marker_col)
@@ -109,7 +109,7 @@ hl_gaps4_server = function(){
   maplibre_proxy("map") |> 
     clear_markers() |>
     fly_to(center = c(-128.1304500978, 51.6543667868),
-           zoom = 10,
+           zoom = 13,
            pitch = 0,
            bearing = 0) |>
     add_markers(c(-128.1304500978, 51.6543667868), color =  marker_col)
@@ -123,6 +123,7 @@ hl_gaps5_ui = function(){
   
   "hl_gaps5" = story_section(
     title = "Found in the South!",
+    position = "right",
     content = list(
       p(HTML("This Arctic Yellowjacket was foundby <a href ='https://inaturalist.ca/people/shawnb2'>Shawn Brescia</a> in Tweedsmuir Provincial Park this summer. This record represents a significant southward range extension for the species in British Columbia. It is one of only 13 observations ever recorded in the province on iNaturalist! Photograph by <a href = 'https://inaturalist.ca/people/abbyhyde'>Abby Hyde</a>.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/560015487/large.jpg", 

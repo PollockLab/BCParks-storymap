@@ -6,10 +6,21 @@
 
 library(shiny)
 library(mapgl)
+library(sf)
+library(rcartocolor)
 
 # Marker color
 marker_col = "#4377be"
-center.point = c(-101, 62) # coordinates at center of the map 
+center.point = rev(c(56, -120))
+# (-125.464528, 54.937959) # coordinates at center of the map
+
+## Loading data ----------------------------------------------------------------
+
+# BC Parks polygons
+parks = st_read("data/bc-parks-pol/bc_parks.shp")
+
+# observations from 2025 season
+obs = st_read("data/iNaturalist/obs_2025.geojson")
 
 ## Loading functions -----------------------------------------------------------
 
@@ -120,39 +131,78 @@ server <- function(input, output, session) {
       maptiler_style("satellite"),   # base map style
       scrollZoom = FALSE,       # block scroll zooming otherwise you can't move
       center = center.point,     # center-ish of Canada
-      zoom = 1.6) |>
+      zoom = 4.5) |>
       
+      add_navigation_control(
+        show_compass = TRUE,
+        show_zoom = TRUE,
+        visualize_pitch = FALSE,
+        position = "top-left",
+        orientation = "vertical"
+      ) |>
+      
+      add_circle_layer(id = "observations",
+                       source = obs,
+                       circle_color = match_expr(
+                         "iconic_taxon_name",
+                         values = unique(obs$iconic_taxon_name),
+                         stops = c(rcartocolor::carto_pal(n = 12, 
+                                                          name = "Antique"), 
+                                   "#c2999f")
+                       ),
+                       circle_stroke_color = "white",
+                       circle_stroke_width = .5,
+                       circle_opacity = 0.8,
+                       circle_radius = 5,
+                       tooltip = "label") #|>
       # set to globe for the sphere look
-      set_projection("globe") #|> 
-      
-      # # Add the GBIF raster tile layer
-      # mapgl::add_raster_source(
-      #   id = "inat-density-summer2025",
-      #   tiles = gbif_url 
+      #set_projection("globe") 
+    
+      # # Add BC Parks polygons
+      # add_fill_layer(id = "bcparks_poly",
+      #                source = parks,
+      #                fill_color = "gold",
+      #                fill_opacity = 0.4) |>
+      # 
+      # add_heatmap_layer(
+      #   id = "obsdata", 
+      #   source = obs,
+      #   heatmap_radius = 4,
+      #   heatmap_opacity = .7,
+      #   heatmap_intensity = mapgl::interpolate(
+      #     property = "zoom",
+      #     values = c(0, 9),
+      #     stops = c(1, 3)
+      #   ),
+      #   heatmap_color = mapgl::interpolate(
+      #     property = "heatmap-density",
+      #     values = seq(0, 1, 0.2),
+      #     stops = c("transparent", viridisLite::turbo(12)[2:6])
+      # ))
+      # # Add the raster layer
+      # mapgl::add_image_source(
+      #   id = "inat-obs-density",
+      #   data = obs_dens
       # ) |>
       # # Add the raster layer to the map
       # mapgl::add_raster_layer(
       #   id = "gbif-layer",
-      #   source = "inat-density-summer2025",
+      #   source = "inat-obs-density",
+      #   raster_fade_duration = 0,
       #   raster_opacity = 0.8)
   })
   
   # Introduction ---------------------------------------------------------------
   
   on_section("map", "intro1", { maplibre_proxy("map") })
-  on_section("map", "intro2", { maplibre_proxy("map") })
+  
+  #on_section("map", "intro2", { maplibre_proxy("map") })
   on_section("map", "intro3", { maplibre_proxy("map") })
   
   # 1. Big Surprises from 2025 -------------------------------------------------
   
   # Transition
-  on_section("map", "section_surprises", { 
-    maplibre_proxy("map") |> 
-      clear_markers() |>
-      fly_to(center = center.point,
-             zoom = 2,
-             pitch = 0,
-             bearing = 0)})
+  on_section("map", "section_surprises", { maplibre_proxy("map") })
   # Content
   on_section("map", "hl_surprises1", { hl_surprises1_server() })
   on_section("map", "hl_surprises2", { hl_surprises2_server() })
@@ -163,13 +213,7 @@ server <- function(input, output, session) {
   # 2. Looks can be deceiving!  ------------------------------------------------
 
   # Transition
-  on_section("map", "section_looks", { 
-    maplibre_proxy("map") |> 
-      clear_markers() |>
-      fly_to(center = center.point,
-             zoom = 2,
-             pitch = 0,
-             bearing = 0)})
+  on_section("map", "section_looks", {maplibre_proxy("map") })
   # Content
   on_section("map", "hl_looks1", { hl_looks1_server() })
   on_section("map", "hl_looks2", { hl_looks2_server() })
@@ -178,13 +222,7 @@ server <- function(input, output, session) {
   # 3. Making its Debut!  ------------------------------------------------------
   
   # Transition
-  on_section("map", "section_debut", { 
-    maplibre_proxy("map") |> 
-      clear_markers() |>
-      fly_to(center = center.point,
-             zoom = 2,
-             pitch = 0,
-             bearing = 0)})
+  on_section("map", "section_debut", { maplibre_proxy("map") })
   # Content
   on_section("map", "hl_debut1", { hl_debut1_server() })
   on_section("map", "hl_debut2", { hl_debut2_server() })
@@ -196,13 +234,7 @@ server <- function(input, output, session) {
   # 4. Filling in the gaps! ----------------------------------------------------
   
   # Transition
-  on_section("map", "section_gaps", { 
-    maplibre_proxy("map") |> 
-      clear_markers() |>
-      fly_to(center = center.point,
-             zoom = 2,
-             pitch = 0,
-             bearing = 0) })
+  on_section("map", "section_gaps", { maplibre_proxy("map") })
   # Content
   on_section("map", "hl_gaps1", { hl_gaps1_server() })
   on_section("map", "hl_gaps2", { hl_gaps2_server() })
@@ -214,13 +246,7 @@ server <- function(input, output, session) {
   # 5. Discoveries can be contagious!  -------------------------------------
   
   # Transition
-  on_section("map", "section_discoveries", { 
-    maplibre_proxy("map") |> 
-      clear_markers() |>
-      fly_to(center = center.point,
-             zoom = 2,
-             pitch = 0,
-             bearing = 0)})
+  on_section("map", "section_discoveries", { maplibre_proxy("map") })
   # Content
   on_section("map", "hl_discoveries1", { hl_discoveries1_server() })
   on_section("map", "hl_discoveries2", { hl_discoveries2_server() })
@@ -230,13 +256,7 @@ server <- function(input, output, session) {
   # 6. Great Shots! --------------------------------------------------------
   
   # Transition
-  on_section("map", "section_greatshots", { 
-    maplibre_proxy("map") |> 
-      clear_markers() |>
-      fly_to(center = center.point,
-             zoom = 2,
-             pitch = 0,
-             bearing = 0)})
+  on_section("map", "section_greatshots", { maplibre_proxy("map") })
   # Content
   on_section("map", "hl_greatshots1", { hl_greatshots1_server()})
   on_section("map", "hl_greatshots2", { hl_greatshots2_server()})
@@ -247,13 +267,7 @@ server <- function(input, output, session) {
   
   
   # End: Thank you -------------------------------------------------------------
-  on_section("map", "end_getinvolved", { 
-    maplibre_proxy("map") |> 
-      clear_markers() |>
-      fly_to(center = center.point,
-             zoom = 2,
-             pitch = 0,
-             bearing = 0)})
+  on_section("map", "end_getinvolved", { maplibre_proxy("map") })
   on_section("map", "end_thankyou", { maplibre_proxy("map") })
   
   

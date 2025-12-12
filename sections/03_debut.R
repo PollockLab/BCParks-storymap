@@ -51,7 +51,7 @@ hl_debut2_server = function(){
   maplibre_proxy("map") |> 
     clear_markers() |>
     fly_to(center = c(-119.6093016667, 49.0227433333),
-           zoom = 10,
+           zoom = 12,
            pitch = 0,
            bearing = 0) |>
     add_markers(c(-119.6093016667, 49.0227433333), color =  marker_col)
@@ -79,11 +79,11 @@ hl_debut3_server = function(){
   
   maplibre_proxy("map") |> 
     clear_markers() |>
-    fly_to(center = c(-119.6093016667, 49.0227433333),
+    fly_to(center = rev(c(49.45882, -116.548065)),
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.6093016667, 49.0227433333), color =  marker_col)
+    add_markers(rev(c(49.45882, -116.548065)), color =  marker_col)
 }
 
 
@@ -94,6 +94,7 @@ hl_debut4_ui = function(){
   
   "hl_debut4" = story_section(
     title = "Flying into Canadian records!",
+    position = "right",
     content = list(
       p(HTML("Discovered in Lower Tsitika River Provincial Park by <a href = 'https://inaturalist.ca/people/abbyhyde'>Abby Hyde</a> and <a href ='https://inaturalist.ca/people/shawnb2'>Shawn Brescia</a>, this observation of a Slenderhead Sallfly is the first ever Canadian record, and not just on iNaturalist. Photograph by <a href = 'https://inaturalist.ca/people/abbyhyde'>Abby Hyde</a>.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/568803541/large.jpg", 
