@@ -85,7 +85,7 @@ transition_to_gaps_ui = function(){
       p(HTML("We’re learning lots more about species' true ranges. Here are some notable examples from this year:"))
     ),
     position = "center",
-    width = 420,
+    width = 600,
     bg_color = "white"
   )
 }

@@ -8,6 +8,7 @@ library(shiny)
 library(mapgl)
 library(sf)
 library(rcartocolor)
+library(gfonts)
 
 # Marker color
 marker_col = "#4377be"
@@ -15,9 +16,6 @@ center.point = rev(c(56, -120))
 # (-125.464528, 54.937959) # coordinates at center of the map
 
 ## Loading data ----------------------------------------------------------------
-
-# BC Parks polygons
-parks = st_read("data/bc-parks-pol/bc_parks.shp")
 
 # observations from 2025 season
 obs = st_read("data/iNaturalist/obs_2025.geojson")
@@ -36,17 +34,19 @@ source("sections/05_discoveries.R")
 source("sections/06_greatshots.R")
 source("sections/07_info_thankyou.R")
 
-# BC Parks density map
-# to add here ----
 
 ## USER INTERFACE --------------------------------------------------------------
 
 ui <- fluidPage(
+  
+  # Set up font
+  use_font("montserrat", "www/css/montserrat.css"),
+  
+  # Set up the structure of the story map 
   story_map(
     
     # Base map -----------------------------------------------------------------
     map_id = "map",
-    font_family = "Public Sans",
     map_type = "maplibre",
     
     sections = list(
@@ -147,8 +147,8 @@ server <- function(input, output, session) {
                          "iconic_taxon_name",
                          values = unique(obs$iconic_taxon_name),
                          stops = c(rcartocolor::carto_pal(n = 12, 
-                                                          name = "Antique"), 
-                                   "#c2999f")
+                                                          name = "Prism"), 
+                                   "darkred")
                        ),
                        circle_stroke_color = "white",
                        circle_stroke_width = .5,

@@ -33,6 +33,8 @@ write_sf(df_2025, "data/iNaturalist/obs_2025.shp")
 write_sf(df_2025, "data/iNaturalist/obs_2025.geojson",
          append = FALSE, delete_layer = TRUE) # might need to manually delete previous versions
 
+# make a cloud-optimized version to make the app faster
+
 
 # make raster ----
 
@@ -47,3 +49,4 @@ df_vect = vect(df)
 df_rast = rasterize(df_vect, base, fun = "length")
 df_rast = trim(df_rast)
 terra::writeRaster(df_rast, "data/iNaturalist/obs_rast.tif", overwrite = T)
+

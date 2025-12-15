@@ -22,7 +22,7 @@ hl_thankyou_ui = function(){
     title = "A big thank you to all our supporters!",
     content = list(      
       p(HTML("Thanks to everyone who has contributed, your efforts are helping us document and better understand British Columbia’s incredible biodiversity!")),
-      p(HTML("We’d also like to thank our funders, <b>BC Parks and The Sitka Foundatio</b>, whose support makes this program possible, as well as our partners, the <b>BC Conservation Data Centre</b> and the <b>Hakai Institute</b>.")),
+      p(HTML("We’d also like to thank our funders, <b>BC Parks and The Sitka Foundation</b>, whose support makes this program possible, as well as our partners, the <b>BC Conservation Data Centre</b> and the <b>Hakai Institute</b>.")),
       p(HTML("Finally, a big thank you to <b>our dedicated field team</b>, who spend every summer tirelessly documenting as many species as they can. You can follow along with their uploads here: <a href='https://inaturalist.ca/projects/bc-big-summer-teams'>inaturalist.ca/projects/bc-big-summer-teams</a>"))
     ),
     position = "center",
