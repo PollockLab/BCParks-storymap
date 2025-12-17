@@ -2,13 +2,14 @@
 
 library(rsconnect)
 
-# set up rsconnect
-# To set this up, go to the shinyapps.io account, then
+# Set up rsconnect, which takes care of deploying the app.
+# Go to your shinyapps.io account, then
 # Left panel: Account > Tokens. Click +Add Token (top right).
-# Copy the provided code (replace lines 9-11)
+# Click "Show" on the new token.
+# Copy the provided code (replace these next 3 lines with your code)
 rsconnect::setAccountInfo(name='katherinehebert', 
                           token='7E90ED806F7D8D54C7F650AB9B1BE50B', 
                           secret='A3eiJ9jPUtP+ehQkMdiYdkMNqQONgp1WDHoID0WV')
 
 # Deploy the app!
-deployApp(appTitle = "BC Biodiversity Program", envManagement = TRUE)
+deployApp(appTitle = "highlights", envManagement = TRUE)

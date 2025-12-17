@@ -141,6 +141,7 @@ server <- function(input, output, session) {
     ) |>
       add_circle_layer(id = "obs-layer",
                        source = "obs-source",
+                       source_layer='species',
                        circle_color = match_expr(
                          "iconic_taxon_name",
                          values = c("Plantae", "Fungi","Insecta","Aves","Mollusca",      
@@ -149,9 +150,9 @@ server <- function(input, output, session) {
                          stops = c(rcartocolor::carto_pal(n = 12, name = "Prism"), 
                                    "darkred")
                        ),
-                       circle_stroke_color = "white",
-                       circle_stroke_width = .5,
-                       circle_opacity = 0.8,
+                       circle_stroke_color = "black",
+                       circle_stroke_width = .2,
+                       circle_opacity = 0.9,
                        circle_radius = 5,
                        tooltip = "label") 
   })

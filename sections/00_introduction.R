@@ -7,7 +7,7 @@ intro1 = function(){
     title = p(HTML("BC Biodiversity Program")),
     content = list(      
       p(HTML("A team of naturalists and researchers dedicated to engaging the public in community science and documenting the incredible biodiversity found in British Columbia’s provincial protected areas—and beyond.")),
-      p(HTML("<b><i>Scroll to see the highlights from our 2025 Season</b></i>"))
+      p(HTML("<b><i>Scroll to see the highlights from our 2025 Season!</b></i>"))
       ),
     position = "center",
     width = 600, 
