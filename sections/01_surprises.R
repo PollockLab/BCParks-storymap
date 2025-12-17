@@ -107,7 +107,7 @@ hl_surprises4_server = function(){
   
   maplibre_proxy("map") |> 
     clear_markers() |>
-    fly_to(center = center.point,
+    fly_to(center = c(-119.606175, 49.008955),
            zoom = 4,
            pitch = 0,
            bearing = 0) 
