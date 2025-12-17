@@ -1,6 +1,6 @@
 # Storymap: BC Parks iNaturalist 2025 Highlights
 
-[![badge](https://img.shields.io/static/v1?style=for-the-badge&label=LAUNCH(NOTREADY)&message=STORYMAP&color=61bf75)]()
+[![badge](https://img.shields.io/static/v1?style=for-the-badge&label=LAUNCH(TESTER)&message=STORYMAP&color=61bf75)](https://katherinehebert.shinyapps.io/bc_biodiversity_program/)
 
 This is a Shiny storymap to show 2025 highlights from the BC Parks iNaturalist project: [https://inaturalist.ca/projects/bc-parks](https://inaturalist.ca/projects/bc-parks)
 
