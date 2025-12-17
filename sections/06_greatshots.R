@@ -25,7 +25,7 @@ hl_greatshots1_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.6381283333, 49.3078183333), color =  marker_col)
+    add_markers(c(-119.6381283333, 49.3078183333))
 }
 
 
@@ -54,7 +54,7 @@ hl_greatshots2_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-122.0232283333, 49.1762716667), color =  marker_col)
+    add_markers(c(-122.0232283333, 49.1762716667))
 }
 
 
@@ -83,7 +83,7 @@ hl_greatshots3_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-126.52696, 50.33626), color =  marker_col)
+    add_markers(c(-126.52696, 50.33626))
 }
 
 
@@ -112,7 +112,7 @@ hl_greatshots4_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-116.546875, 49.46204), color =  marker_col)
+    add_markers(c(-116.546875, 49.46204))
 }
 
 
@@ -142,7 +142,7 @@ hl_greatshots5_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-123.2381366212, 49.5572793607), color =  marker_col)
+    add_markers(c(-123.2381366212, 49.5572793607))
 }
 
 
@@ -171,5 +171,5 @@ hl_greatshots6_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-125.3116696021, 49.7274832062), color =  marker_col)
+    add_markers(c(-125.3116696021, 49.7274832062))
 }

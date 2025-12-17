@@ -16,11 +16,7 @@ transition_to_surprises_ui = function(){
 
 transition_to_surprises_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() #|>
-    # fly_to(center = center.point,
-    #        zoom = 6,
-    #        pitch = 0,
-    #        bearing = 0)
+    clear_markers() 
 }
 
 
@@ -42,11 +38,7 @@ transition_to_looks_ui = function(){
 
 transition_to_looks_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() #|>
-    # fly_to(center = center.point,
-    #        zoom = 6,
-    #        pitch = 0,
-    #        bearing = 0)
+    clear_markers() 
 }
 
 
@@ -69,11 +61,7 @@ transition_to_debut_ui = function(){
 
 transition_to_debut_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() #|>
-    # fly_to(center = center.point,
-    #        zoom = 4,
-    #        pitch = 0,
-    #        bearing = 0)
+    clear_markers() 
 }
 
 # 4. Filling in the gaps! ------------------------------------------------
@@ -92,11 +80,7 @@ transition_to_gaps_ui = function(){
 
 transition_to_gaps_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() #|>
-    # fly_to(center = center.point,
-    #        zoom = 4,
-    #        pitch = 0,
-    #        bearing = 0)
+    clear_markers() 
 }
 
 # 5. Discoveries can be contagious!  -------------------------------------
@@ -115,11 +99,7 @@ transition_to_discoveries_ui = function(){
 
 transition_to_discoveries_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() #|>
-    # fly_to(center = center.point,
-    #        zoom = 4,
-    #        pitch = 0,
-    #        bearing = 0)
+    clear_markers() 
   }
 
 # 6. Great Shots! --------------------------------------------------------
@@ -138,9 +118,5 @@ transition_to_greatshots_ui = function(){
 
 transition_to_greatshots_server = function(){
   maplibre_proxy("map") |> 
-    clear_markers() #|>
-    # fly_to(center = center.point,
-    #        zoom = 4,
-    #        pitch = 0,
-    #        bearing = 0)
+    clear_markers() 
 }

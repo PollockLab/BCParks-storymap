@@ -26,7 +26,7 @@ hl_surprises1_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.66886, 49.32608), color =  marker_col)
+    add_markers(c(-119.66886, 49.32608))
 }
 
 # A Cuckoo Yellowjacket --------------------------------------------------------
@@ -55,7 +55,7 @@ hl_surprises2_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-126.554214, 50.309937), color =  marker_col)
+    add_markers(c(-126.554214, 50.309937))
 }
 
 # Red-tailed Rusty Robber!  ----------------------------------------------------
@@ -84,7 +84,7 @@ hl_surprises3_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.606175, 49.008955), color =  marker_col)
+    add_markers(c(-119.606175, 49.008955))
 }
 
 # Link to project --------------------------------------------------------------

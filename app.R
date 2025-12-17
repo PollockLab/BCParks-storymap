@@ -1,4 +1,6 @@
-# Storymap of BC Parks Highlights
+# Storymap of BC Parks Highlights 2025
+
+
 # Shiny app coded by Katherine Hébert
 # Content provided by Arianne Nickels
 
@@ -11,14 +13,7 @@ library(rcartocolor)
 library(gfonts)
 
 # Marker color
-marker_col = "#4377be"
 center.point = rev(c(56, -120))
-# (-125.464528, 54.937959) # coordinates at center of the map
-
-## Loading data ----------------------------------------------------------------
-
-# observations from 2025 season
-obs = st_read("data/iNaturalist/obs_2025.geojson")
 
 ## Loading functions -----------------------------------------------------------
 
@@ -130,7 +125,7 @@ server <- function(input, output, session) {
     maplibre(
       maptiler_style("satellite"),   # base map style
       scrollZoom = FALSE,       # block scroll zooming otherwise you can't move
-      center = center.point,     # center-ish of Canada
+      center = center.point,     # center-ish of the zone we want to focus on
       zoom = 4.5) |>
       
       add_navigation_control(
@@ -140,69 +135,37 @@ server <- function(input, output, session) {
         position = "top-left",
         orientation = "vertical"
       ) |>
-      
-      add_circle_layer(id = "observations",
-                       source = obs,
+    mapgl::add_pmtiles_source(
+      id = "obs-source",
+      url = "https://object-arbutus.cloud.computecanada.ca/bq-io/blitz-the-gap/bc/bc_species.pmtiles"
+    ) |>
+      add_circle_layer(id = "obs-layer",
+                       source = "obs-source",
                        circle_color = match_expr(
                          "iconic_taxon_name",
-                         values = unique(obs$iconic_taxon_name),
-                         stops = c(rcartocolor::carto_pal(n = 12, 
-                                                          name = "Prism"), 
+                         values = c("Plantae", "Fungi","Insecta","Aves","Mollusca",      
+                                    "Arachnida", "Animalia", "Mammalia", "Actinopterygii", "Reptilia",      
+                                     "Protozoa", "Chromista","Amphibia"),
+                         stops = c(rcartocolor::carto_pal(n = 12, name = "Prism"), 
                                    "darkred")
                        ),
                        circle_stroke_color = "white",
                        circle_stroke_width = .5,
                        circle_opacity = 0.8,
                        circle_radius = 5,
-                       tooltip = "label") #|>
-      # set to globe for the sphere look
-      #set_projection("globe") 
-    
-      # # Add BC Parks polygons
-      # add_fill_layer(id = "bcparks_poly",
-      #                source = parks,
-      #                fill_color = "gold",
-      #                fill_opacity = 0.4) |>
-      # 
-      # add_heatmap_layer(
-      #   id = "obsdata", 
-      #   source = obs,
-      #   heatmap_radius = 4,
-      #   heatmap_opacity = .7,
-      #   heatmap_intensity = mapgl::interpolate(
-      #     property = "zoom",
-      #     values = c(0, 9),
-      #     stops = c(1, 3)
-      #   ),
-      #   heatmap_color = mapgl::interpolate(
-      #     property = "heatmap-density",
-      #     values = seq(0, 1, 0.2),
-      #     stops = c("transparent", viridisLite::turbo(12)[2:6])
-      # ))
-      # # Add the raster layer
-      # mapgl::add_image_source(
-      #   id = "inat-obs-density",
-      #   data = obs_dens
-      # ) |>
-      # # Add the raster layer to the map
-      # mapgl::add_raster_layer(
-      #   id = "gbif-layer",
-      #   source = "inat-obs-density",
-      #   raster_fade_duration = 0,
-      #   raster_opacity = 0.8)
+                       tooltip = "label") 
   })
   
   # Introduction ---------------------------------------------------------------
   
   on_section("map", "intro1", { maplibre_proxy("map") })
-  
-  #on_section("map", "intro2", { maplibre_proxy("map") })
-  on_section("map", "intro3", { maplibre_proxy("map") })
+  # on_section("map", "intro2", { maplibre_proxy("map") })
+  # on_section("map", "intro3", { maplibre_proxy("map") })
   
   # 1. Big Surprises from 2025 -------------------------------------------------
   
   # Transition
-  on_section("map", "section_surprises", { maplibre_proxy("map") })
+  # on_section("map", "section_surprises", { maplibre_proxy("map") })
   # Content
   on_section("map", "hl_surprises1", { hl_surprises1_server() })
   on_section("map", "hl_surprises2", { hl_surprises2_server() })

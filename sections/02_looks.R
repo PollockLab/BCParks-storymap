@@ -25,7 +25,7 @@ hl_looks1_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-118.3507, 49.0154138889), color =  marker_col)
+    add_markers(c(-118.3507, 49.0154138889))
 }
 
 
@@ -55,7 +55,7 @@ hl_looks2_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-126.553909, 50.31184), color =  marker_col)
+    add_markers(c(-126.553909, 50.31184))
 }
 
 # Fungi in Disguise!   ---------------------------------------------------------
@@ -83,5 +83,5 @@ hl_looks3_server = function(){
            zoom = 13,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-126.5109790001, 50.3134729999), color =  marker_col)
+    add_markers(c(-126.5109790001, 50.3134729999))
 }

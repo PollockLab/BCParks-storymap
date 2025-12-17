@@ -25,7 +25,7 @@ hl_debut1_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.616165, 49.296223), color =  marker_col)
+    add_markers(c(-119.616165, 49.296223))
 }
 
 
@@ -54,7 +54,7 @@ hl_debut2_server = function(){
            zoom = 12,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.6093016667, 49.0227433333), color =  marker_col)
+    add_markers(c(-119.6093016667, 49.0227433333))
 }
 
 
@@ -83,7 +83,7 @@ hl_debut3_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(rev(c(49.45882, -116.548065)), color =  marker_col)
+    add_markers(rev(c(49.45882, -116.548065)))
 }
 
 
@@ -113,7 +113,7 @@ hl_debut4_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-126.576675, 50.426464), color =  marker_col)
+    add_markers(c(-126.576675, 50.426464))
 }
 
 
@@ -142,7 +142,7 @@ hl_debut5_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-123.5146598378, 48.5197120884), color =  marker_col)
+    add_markers(c(-123.5146598378, 48.5197120884))
 }
 
 # New Noctuid Moth Record for B.C.    -----------------------------------------
@@ -170,5 +170,5 @@ hl_debut6_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.522758, 49.094841), color =  marker_col)
+    add_markers(c(-119.522758, 49.094841))
 }

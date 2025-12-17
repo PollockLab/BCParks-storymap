@@ -26,7 +26,7 @@ hl_discoveries1_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-127.962433, 51.644722), color =  marker_col)
+    add_markers(c(-127.962433, 51.644722))
 }
 
 
@@ -55,7 +55,7 @@ hl_discoveries2_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.6733586632, 49.1200447598), color =  marker_col)
+    add_markers(c(-119.6733586632, 49.1200447598))
 }
 
 
@@ -85,6 +85,6 @@ hl_discoveries3_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-126.58008207, 50.4246078261), color =  marker_col) |>
-    add_markers(c(-126.5812085336, 50.4239342304), color =  marker_col)
+    add_markers(c(-126.58008207, 50.4246078261)) |>
+    add_markers(c(-126.5812085336, 50.4239342304))
 }

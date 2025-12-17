@@ -25,7 +25,7 @@ hl_gaps1_server = function(){
            zoom = 12,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-118.351128, 49.014248), color =  marker_col)
+    add_markers(c(-118.351128, 49.014248))
 }
 
 
@@ -54,7 +54,7 @@ hl_gaps2_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-119.547707, 49.30542), color =  marker_col)
+    add_markers(c(-119.547707, 49.30542))
 }
 
 
@@ -83,7 +83,7 @@ hl_gaps3_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-126.531425, 50.336483), color =  marker_col)
+    add_markers(c(-126.531425, 50.336483))
 }
 
 
@@ -112,7 +112,7 @@ hl_gaps4_server = function(){
            zoom = 13,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-128.1304500978, 51.6543667868), color =  marker_col)
+    add_markers(c(-128.1304500978, 51.6543667868))
 }
 
 
@@ -142,5 +142,5 @@ hl_gaps5_server = function(){
            zoom = 10,
            pitch = 0,
            bearing = 0) |>
-    add_markers(c(-125.855423, 52.283783), color =  marker_col)
+    add_markers(c(-125.855423, 52.283783))
 }
