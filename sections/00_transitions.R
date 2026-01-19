@@ -89,7 +89,7 @@ transition_to_discoveries_ui = function(){
   story_section(
     title = "5. Discoveries can be contagious!",
     content = list(
-      p("iNaturalist helps find more! Here are some examples from this summer where a first observation sparked others to follow suit, adding more records of the species.")
+      p("Often, adding new observations to iNaturalist helps to find more! Here are some examples from this year where a first observation sparked others to follow suit, adding more records of the species.")
     ),
     position = "center",
     width = 600,

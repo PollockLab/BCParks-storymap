@@ -8,7 +8,7 @@ hl_gaps1_ui = function(){
   "hl_gaps1" = story_section(
     title = "Beyond the Coastal Mountains!",
     content = list(
-      p(HTML("This Robber Fly (<i>Crytopogon anomalus</i>) was found and photographed by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a> in Boothman’s Oxbow Provincial Park, marking the first record of this species east of the Coast Mountains of British Columbia.")),
+      p(HTML("This Robber Fly (<i>Crytopogon anomalus</i>) was found and photographed by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a> in Boothman’s Oxbow Park, marking the first record of this species east of the Coast Mountains of British Columbia.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/565509750/large.jpg", 
           width = "350px"),
       p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/313172403', target='_blank'>View observation</a>"))
@@ -66,7 +66,7 @@ hl_gaps3_ui = function(){
   "hl_gaps3" = story_section(
     title = "A Tiny but Mighty Find!",
     content = list(
-      p(HTML("This <i>Apotreubia nana</i> - a beautiful and rare liverwort - was discovered by <a href ='https://inaturalist.ca/people/jbindernagel', target='_blank'>Jack Bindernagel</a> and photographed by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a> in Claude Elliott Provincial Park this summer. This is the southern most record of this species ever made and one of only 18 records ever made on iNaturalist!")),
+      p(HTML("This <i>Apotreubia nana</i> - a beautiful and rare liverwort - was discovered by <a href ='https://inaturalist.ca/people/jbindernagel', target='_blank'>Jack Bindernagel</a> and photographed by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a> in Claude Elliott Lake Park this summer. This is the southern most record of this species ever made and one of only 18 records ever made on iNaturalist!")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/569353802/large.jpg", 
           width = "350px"),
       p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/315182887', target='_blank'>View observation</a>"))
@@ -95,7 +95,7 @@ hl_gaps4_ui = function(){
   "hl_gaps4" = story_section(
     title = "A new site for this Crowned Driftclinger!",
     content = list(
-      p(HTML("Found and photographed by <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a> in the Hakai Luxvbalis Conservancy, on Calvert Island. This marks only the second confirmed location of a Crowned Driftclinger in Canada.")),
+      p(HTML("Found and photographed by <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a> in the Hakai Luxvbalis Conservancy, on Calvert Island. This marks only the second confirmed location of this woodlouse in Canada, after one record from the west coast of Vancouver Island.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/520013079/large.jpg", 
           width = "350px"),
       p(HTML("© Shawn Brescia (<a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>@shawnb2</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/289135286', target='_blank'>View observation</a>"))
@@ -125,7 +125,7 @@ hl_gaps5_ui = function(){
     title = "Found in the South!",
     position = "right",
     content = list(
-      p(HTML("This Arctic Yellowjacket was foundby <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a> in Tweedsmuir Provincial Park this summer. This record represents a significant southward range extension for the species in British Columbia. It is one of only 13 observations ever recorded in the province on iNaturalist! Photograph by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a>.")),
+      p(HTML("This Arctic Yellowjacket was found by <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a> in Tweedsmuir Park this summer. This record represents a significant southward range extension for the species in British Columbia. It is one of only 13 observations ever recorded in the province on iNaturalist! Photograph by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a>.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/560015487/large.jpg", 
           width = "350px"),
       p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/310301855', target='_blank'>View observation</a>"))

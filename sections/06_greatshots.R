@@ -66,7 +66,7 @@ hl_greatshots3_ui = function(){
   "hl_greatshots3" = story_section(
     title = "Life after dark!",
     content = list(
-      p(HTML("This amazing shot of a Western Panthea Moth was taken by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a> in Claud Elliott Provincial Park.")),
+      p(HTML("This amazing shot of a Western Panthea Moth was taken by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a> in Claud Elliott Lake Park.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/569550370/large.jpg", 
           width = "350px"),
       p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/315289435', target='_blank'>View observation</a>"))
@@ -95,7 +95,7 @@ hl_greatshots4_ui = function(){
   "hl_greatshots4" = story_section(
     title = "Quite the mouthful!",
     content = list(
-      p(HTML("This adorable American Pika was photographed by <a href ='https://inaturalist.ca/people/cassidybest', target='_blank'>Cassidy Best</a> in Kianuko Provincial Park, right in the middle of its lunch break!")),
+      p(HTML("This adorable American Pika was photographed by <a href ='https://inaturalist.ca/people/cassidybest', target='_blank'>Cassidy Best</a> in Kianuko Park, right in the middle of its lunch break!")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/566391956/large.jpg", 
           width = "350px"),
       p(HTML("© Cassidy Best (<a href = 'https://inaturalist.ca/people/cassidybest', target='_blank'>@cassidybest</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/313640609', target='_blank'>View observation</a>"))
@@ -125,7 +125,7 @@ hl_greatshots5_ui = function(){
     title = "Making a splash!",
     position = "right",
     content = list(
-      p(HTML("This incredible shot of these two Pacific White-sided Dolphins was taken by <a href='https://www.inaturalist.ca/people/claudiasnaturejournal', target='_blank'>Claudia Cridge</a> in Porteau Cove Provincial Park.")),
+      p(HTML("This incredible shot of these two Pacific White-sided Dolphins was taken by <a href='https://www.inaturalist.ca/people/claudiasnaturejournal', target='_blank'>Claudia Cridge</a> in Porteau Cove Park.")),
       img(src = "https://static.inaturalist.org/photos/473056137/large.jpeg", 
           width = "350px"),
       p(HTML("© Claudia Cridge (<a href='https://www.inaturalist.ca/people/claudiasnaturejournal', target='_blank'>@claudiasnaturejournal</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/263334543', target='_blank'>View observation</a>"))
@@ -154,7 +154,7 @@ hl_greatshots6_ui = function(){
   "hl_greatshots6" = story_section(
     title = "Frosty Flyer!",
     content = list(
-      p(HTML("This beautiful Canada Jay was photographed in Strathcona Provincial Park by <a href='https://www.inaturalist.ca/people/bradenjudson', target='_blank'>Braden J. Judson</a>.")),
+      p(HTML("This beautiful Canada Jay was photographed in Strathcona Park by <a href='https://www.inaturalist.ca/people/bradenjudson', target='_blank'>Braden J. Judson</a>.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/462433322/large.jpg", 
           width = "350px"),
       p(HTML("© Braden J. Judson (<a href='https://www.inaturalist.ca/people/bradenjudson', target='_blank'>@bradenjudson</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/257757260', target='_blank'>View observation</a>"))

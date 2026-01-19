@@ -38,7 +38,7 @@ hl_surprises2_ui = function(){
     title = "A Cuckoo Yellowjacket!",
     position = "left",
     content = list(
-      p(HTML("Spotted in Claud Elliott Provincial Park by <a href ='https://inaturalist.ca/people/shawnb2'>Shawn Brescia</a>. Provincially listed as vulnerable, it is one of the rarest yellowjackets found in British Columbia, with only 13 observations ever recorded on iNaturalist across the province. <a href = 'https://inaturalist.ca/observations/314018734', target='_blank'>A second individual</a> was also captured by <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a> this summer in Tweedsmuir Provincial Park, which represented only the second male uploaded to iNaturalist. Photograph by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a>.")),
+      p(HTML("Spotted in Claud Elliott Lake Park by <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a>. Provincially listed as vulnerable, it is one of the rarest yellowjackets found in British Columbia, with only 13 observations ever recorded on iNaturalist across the province. <a href = 'https://inaturalist.ca/observations/314018734', target='_blank'>A second individual</a> was also captured by <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a> this summer in Tweedsmuir Park, which represented only the second male uploaded to iNaturalist. Photograph by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a>.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/570351554/large.jpg", 
           width = "350px"),
       p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/315711357', target='_blank'>View observation</a>"))
@@ -67,7 +67,7 @@ hl_surprises3_ui = function(){
     title = "Red-tailed Rusty Robber!",
     position = "left",
     content = list(
-      p(HTML("Found and photographed by <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a> in South Okanagan Grasslands Provincial Park, this Blue-listed robber fly is provincially considered a species of special concern. This record represents only the second observation of this species in British Columbia made on iNaturalist.")),
+      p(HTML("Found and photographed by <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a> in South Okanagan Grasslands Protected Area, this Blue-listed robber fly is provincially considered a species of special concern. This record represents only the second observation of this species in British Columbia made on iNaturalist.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/537856804/large.jpg", 
           width = "350px"),
       p(HTML("© Shawn Brescia (<a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>@shawnb2</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/298591123', target='_blank'>View observation</a>"))
