@@ -9,11 +9,16 @@
 library(shiny)
 library(mapgl)
 library(sf)
+library(stringr)
 library(rcartocolor)
 library(gfonts)
 
 # Marker color
 center.point = rev(c(56, -120))
+
+# Load Parks polygons
+parks = sf::st_read("data/bc-parks-pol/bc_parks.shp")
+parks$PL_NAME = stringr::str_to_title(parks$PL_NAME)
 
 ## Loading functions -----------------------------------------------------------
 
@@ -128,6 +133,7 @@ server <- function(input, output, session) {
       center = center.point,     # center-ish of the zone we want to focus on
       zoom = 4.5) |>
       
+      # add zoom controls
       add_navigation_control(
         show_compass = TRUE,
         show_zoom = TRUE,
@@ -135,6 +141,16 @@ server <- function(input, output, session) {
         position = "top-left",
         orientation = "vertical"
       ) |>
+      
+      # add BC Parks polygons
+      add_fill_layer(id = "bcparks_poly",
+                     source = parks,
+                     fill_color = "#badea9",
+                     fill_outline_color = "transparent",
+                     fill_opacity = 0.5, 
+                     tooltip = "PL_NAME") |>
+      
+      # add observation points
     mapgl::add_pmtiles_source(
       id = "obs-source",
       url = "https://object-arbutus.cloud.computecanada.ca/bq-io/blitz-the-gap/bc/bc_species.pmtiles"
@@ -154,7 +170,19 @@ server <- function(input, output, session) {
                        circle_stroke_width = .2,
                        circle_opacity = 0.9,
                        circle_radius = 5,
-                       tooltip = "label") 
+                       tooltip = "label") |>
+      
+      # add legend for the points
+      add_legend("Taxonomic group",
+                 values = c("Plantae", "Fungi","Insecta","Aves","Mollusca",      
+                            "Arachnida", "Animalia", "Mammalia", "Actinopterygii", "Reptilia",      
+                            "Protozoa", "Chromista","Amphibia"),
+                 colors = c(rcartocolor::carto_pal(n = 12, name = "Prism"), 
+                            "darkred"),
+                 type = "categorical",
+                 patch_shape = "circle",
+                 position = "top-right",
+                 style = list(background_opacity = 0.95))
   })
   
   # Introduction ---------------------------------------------------------------

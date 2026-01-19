@@ -31,7 +31,7 @@ intro3 = function(){
   story_section(
     title = "Here are some of the season’s outstanding finds in 2025!",
     content = list(
-      p(HTML("You can see all of the discoveries made in the <b><a href = 'https://inaturalist.ca/projects/bc-parks'>BC Parks iNaturalist project</a></b>."))
+      p(HTML("You can see all of the discoveries made in the <b><a href = 'https://inaturalist.ca/projects/bc-parks', target='_blank'>BC Parks iNaturalist project</a></b>."))
     ),
     position = "center",
     width = 600,

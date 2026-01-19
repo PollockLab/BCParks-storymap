@@ -8,10 +8,10 @@ hl_greatshots1_ui = function(){
   "hl_greatshots1" = story_section(
     title = "Striking a Pose!",
     content = list(
-      p(HTML("This stunning Western Tiger Salamander was photographed by <a href ='https://inaturalist.ca/people/justinchans'>Justin Chan</a> in White Lake Grasslands Protected Area. This salamander is endangered in Canada.")),
+      p(HTML("This stunning Western Tiger Salamander was photographed by <a href ='https://inaturalist.ca/people/justinchans', target='_blank'>Justin Chan</a> in White Lake Grasslands Protected Area. This salamander is endangered in Canada.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/510511119/large.jpg", 
           width = "350px"),
-      p(HTML("© Justin Chan (<a href ='https://inaturalist.ca/people/justinchans'>@justinchans</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/283689022'>View observation</a>"))
+      p(HTML("© Justin Chan (<a href ='https://inaturalist.ca/people/justinchans', target='_blank'>@justinchans</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/283689022', target='_blank'>View observation</a>"))
     )
   )
 }
@@ -37,10 +37,10 @@ hl_greatshots2_ui = function(){
   "hl_greatshots2" = story_section(
     title = "Striking a Pose!",
     content = list(
-      p(HTML("This incredible photo of a Tiger Beetle larva in its burrow was photographed by <a href ='https://inaturalist.ca/people/justinchans'>Justin Chan</a> in the Fraser River Ecological Reserve.")),
+      p(HTML("This incredible photo of a Tiger Beetle larva in its burrow was photographed by <a href ='https://inaturalist.ca/people/justinchans', target='_blank'>Justin Chan</a> in the Fraser River Ecological Reserve.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/563282731/large.jpg", 
           width = "350px"),
-      p(HTML("© Justin Chan (<a href ='https://inaturalist.ca/people/justinchans'>@justinchans</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/312013014'>View observation</a>"))
+      p(HTML("© Justin Chan (<a href ='https://inaturalist.ca/people/justinchans', target='_blank'>@justinchans</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/312013014', target='_blank'>View observation</a>"))
     )
   )
 }
@@ -66,10 +66,10 @@ hl_greatshots3_ui = function(){
   "hl_greatshots3" = story_section(
     title = "Life after dark!",
     content = list(
-      p(HTML("This amazing shot of a Western Panthea Moth was taken by <a href = 'https://inaturalist.ca/people/abbyhyde'>Abby Hyde</a> in Claud Elliott Provincial Park.")),
+      p(HTML("This amazing shot of a Western Panthea Moth was taken by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a> in Claud Elliott Provincial Park.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/569550370/large.jpg", 
           width = "350px"),
-      p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/315289435'>View observation</a>"))
+      p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/315289435', target='_blank'>View observation</a>"))
     )
   )
 }
@@ -95,10 +95,10 @@ hl_greatshots4_ui = function(){
   "hl_greatshots4" = story_section(
     title = "Quite the mouthful!",
     content = list(
-      p(HTML("This adorable American Pika was photographed by <a href ='https://inaturalist.ca/people/cassidybest'>Cassidy Best</a> in Kianuko Provincial Park, right in the middle of its lunch break!")),
+      p(HTML("This adorable American Pika was photographed by <a href ='https://inaturalist.ca/people/cassidybest', target='_blank'>Cassidy Best</a> in Kianuko Provincial Park, right in the middle of its lunch break!")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/566391956/large.jpg", 
           width = "350px"),
-      p(HTML("© Cassidy Best (<a href = 'https://inaturalist.ca/people/cassidybest'>@cassidybest</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/313640609'>View observation</a>"))
+      p(HTML("© Cassidy Best (<a href = 'https://inaturalist.ca/people/cassidybest', target='_blank'>@cassidybest</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/313640609', target='_blank'>View observation</a>"))
     )
   )
 }
@@ -125,10 +125,10 @@ hl_greatshots5_ui = function(){
     title = "Making a splash!",
     position = "right",
     content = list(
-      p(HTML("This incredible shot of these two Pacific White-sided Dolphins was taken by <a href='https://www.inaturalist.ca/people/claudiasnaturejournal'>Claudia Cridge</a> in Porteau Cove Provincial Park.")),
+      p(HTML("This incredible shot of these two Pacific White-sided Dolphins was taken by <a href='https://www.inaturalist.ca/people/claudiasnaturejournal', target='_blank'>Claudia Cridge</a> in Porteau Cove Provincial Park.")),
       img(src = "https://static.inaturalist.org/photos/473056137/large.jpeg", 
           width = "350px"),
-      p(HTML("© Claudia Cridge (<a href='https://www.inaturalist.ca/people/claudiasnaturejournal'>@claudiasnaturejournal</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/263334543'>View observation</a>"))
+      p(HTML("© Claudia Cridge (<a href='https://www.inaturalist.ca/people/claudiasnaturejournal', target='_blank'>@claudiasnaturejournal</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/263334543', target='_blank'>View observation</a>"))
     )
   )
 }
@@ -154,10 +154,10 @@ hl_greatshots6_ui = function(){
   "hl_greatshots6" = story_section(
     title = "Frosty Flyer!",
     content = list(
-      p(HTML("This beautiful Canada Jay was photographed in Strathcona Provincial Park by <a href='https://www.inaturalist.ca/people/bradenjudson'>Braden J. Judson</a>.")),
+      p(HTML("This beautiful Canada Jay was photographed in Strathcona Provincial Park by <a href='https://www.inaturalist.ca/people/bradenjudson', target='_blank'>Braden J. Judson</a>.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/462433322/large.jpg", 
           width = "350px"),
-      p(HTML("© Braden J. Judson (<a href='https://www.inaturalist.ca/people/bradenjudson'>@bradenjudson</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/257757260 '>View observation</a>"))
+      p(HTML("© Braden J. Judson (<a href='https://www.inaturalist.ca/people/bradenjudson', target='_blank'>@bradenjudson</a>), some rights reserved (CC-BY-NC) | <a href = 'https://inaturalist.ca/observations/257757260', target='_blank'>View observation</a>"))
     )
   )
 }

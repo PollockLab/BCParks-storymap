@@ -9,10 +9,10 @@ hl_discoveries1_ui = function(){
     title = "First of Many!",
     position = "right",
     content = list(
-      p(HTML("This beautiful fungus (<i>Lachnum gaultheriae</i>) was discovered in the Hakai Luxvbalis Conservancy for the first time in Canada on iNaturalist by <a href='https://www.inaturalist.org/people/eloraa'>Elora Adamson</a>. Since then, four more observations have been made this summer, with likely many more to come!")),
+      p(HTML("This beautiful fungus (<i>Lachnum gaultheriae</i>) was discovered in the Hakai Luxvbalis Conservancy for the first time in Canada on iNaturalist by <a href='https://www.inaturalist.org/people/eloraa', target='_blank'>Elora Adamson</a>. Since then, four more observations have been made this summer, with likely many more to come!")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/519425982/large.jpg", 
           width = "350px"),
-      p(HTML("© Elora Adamson (<a href='https://www.inaturalist.org/people/eloraa'>eloraa</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/288908458'>View observation</a>"))
+      p(HTML("© Elora Adamson (<a href='https://www.inaturalist.org/people/eloraa', target='_blank'>eloraa</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/288908458', target='_blank'>View observation</a>"))
     )
   )
 }
@@ -38,10 +38,10 @@ hl_discoveries2_ui = function(){
   "hl_discoveries2" = story_section(
     title = "More common than we thought!",
     content = list(
-      p(HTML("This March Fly (<i>Bibiodes aestiva</i>) was documented for the first time on iNaturalist on Mount Kobau in the South Okanagan by our team. <a href = 'https://inaturalist.ca/people/abbyhyde'>Abby Hyde</a>, <a href ='https://inaturalist.ca/people/shawnb2'>Shawn Brescia</a>, and <a href ='https://inaturalist.ca/people/jbindernagel'>Jack Bindernagel</a> each found it separately. Interestingly, although these seemed to have been abundant in this location, these are the first records ever made of this species on iNaturalist. Photograph by <a href = 'https://inaturalist.ca/people/abbyhyde'>Abby Hyde</a>.")),
+      p(HTML("This March Fly (<i>Bibiodes aestiva</i>) was documented for the first time on iNaturalist on Mount Kobau in the South Okanagan by our team. <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a>, <a href ='https://inaturalist.ca/people/shawnb2', target='_blank'>Shawn Brescia</a>, and <a href ='https://inaturalist.ca/people/jbindernagel', target='_blank'>Jack Bindernagel</a> each found it separately. Interestingly, although these seemed to have been abundant in this location, these are the first records ever made of this species on iNaturalist. Photograph by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a>.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/541459220/large.jpg", 
           width = "350px"),
-      p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/300508690'>View observation</a>"))
+      p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | <a href = 'https://www.inaturalist.org/observations/300508690', target='_blank'>View observation</a>"))
     )
   )
 }
@@ -68,10 +68,10 @@ hl_discoveries3_ui = function(){
     title = "Treehopper and her babies!",
     position = "right",
     content = list(
-      p(HTML("This Treehopper (<i>Platycotis maritima</i>) was observed for only the second time ever on iNaturalist, spotted by <a href = 'https://inaturalist.ca/people/abbyhyde'>Abby Hyde</a> in Lower Tsitika River Provincial Park. Since then, it has been seen many more times and now has 36 observations made. The puncture holes on the stem are carefully crafted feeding spots made by the mama hopper. Previously thought to feed on hemlock, this species actually prefers red alder. When her babies hatch, she guides them to these prepared feeding grounds.")),
+      p(HTML("This Treehopper (<i>Platycotis maritima</i>) was observed for only the second time ever on iNaturalist, spotted by <a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>Abby Hyde</a> in Lower Tsitika River Provincial Park. Since then, it has been seen many more times and now has 36 observations made. The puncture holes on the stem are carefully crafted feeding spots made by the mama hopper. Previously thought to feed on hemlock, this species actually prefers red alder. When her babies hatch, she guides them to these prepared feeding grounds.")),
       img(src = "https://inaturalist-open-data.s3.amazonaws.com/photos/552544506/large.jpg", 
           width = "350px"),
-      p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | View observations <a href = 'https://inaturalist.ca/observations/306397100'>1</a> and <a href = 'https://inaturalist.ca/observations/306397098'>2</a>"))
+      p(HTML("© Abby Hyde (<a href = 'https://inaturalist.ca/people/abbyhyde', target='_blank'>@abbyhyde</a>), some rights reserved (CC-BY-NC) | View observations <a href = 'https://inaturalist.ca/observations/306397100', target='_blank'>1</a> and <a href = 'https://inaturalist.ca/observations/306397098', target='_blank'>2</a>"))
     )
   )
 }

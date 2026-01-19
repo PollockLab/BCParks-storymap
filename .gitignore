@@ -3,7 +3,6 @@
 .RData
 .Ruserdata
 /data/canada-basegrids
-/data/bc-parks-pol
 data/BCParks_obs_unique_with_BigTeams_flagged.RDS
 data/iNaturalist/BCParks_obs_unique_with_BigTeams_flagged.dbf
 data/iNaturalist/BCParks_obs_unique_with_BigTeams_flagged.prj
