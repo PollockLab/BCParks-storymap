@@ -27,4 +27,4 @@ All displayed photos are hosted on iNaturalist.ca, and displayed using their web
 
 ## Deployment
 
-- Run `deploy.R` to deploy the app to the shinyapps.io account. (not yet done)
+- Run `deploy.R` to deploy the app to the shinyapps.io account. 
