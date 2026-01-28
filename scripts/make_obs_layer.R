@@ -3,6 +3,7 @@
 # load libraries
 library(terra)
 library(tidyverse)
+# library(pmtiles)
 
 # read iNaturalist data for BC Parks 
 # (manually downloaded and stitched together by Janaina Serrano)
@@ -28,13 +29,18 @@ df_2025 = na.omit(df_2025)
 
 df_2025$label = paste0("<b>",df_2025$common_name,"</b> (", df_2025$iconic_taxon_name, ")<br><i>",df_2025$scientific_name,"</i>")
 
+df_2025 = select(df_2025, c(label, iconic_taxon_name))
+
 # save points layer
 write_sf(df_2025, "data/iNaturalist/obs_2025.shp")
 write_sf(df_2025, "data/iNaturalist/obs_2025.geojson",
          append = FALSE, delete_layer = TRUE) # might need to manually delete previous versions
+write_sf(df_2025, "data/iNaturalist/obs_2025.gpkg",
+         append = FALSE, delete_layer = TRUE) 
+saveRDS(df_2025, "data/iNaturalist/obs_2025.rds") 
 
 # make a cloud-optimized version to make the app faster
-
+# pm_create(df_2025, output = "data/iNaturalist/obs_2025.pmtiles")
 
 # make raster ----
 

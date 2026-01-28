@@ -17,8 +17,7 @@ library(gfonts)
 center.point = rev(c(56, -120))
 
 # Load Parks polygons
-parks = sf::st_read("data/bc-parks-pol/bc_parks.shp")
-parks$PL_NAME = stringr::str_to_title(parks$PL_NAME)
+parks = sf::st_read("data/bc-parks-pol/bc_parks_lite.shp")
 
 ## Loading functions -----------------------------------------------------------
 
