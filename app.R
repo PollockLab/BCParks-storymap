@@ -16,9 +16,6 @@ library(gfonts)
 # Marker color
 center.point = rev(c(56, -120))
 
-# Load Parks polygons
-parks = sf::st_read("data/bc-parks-pol/bc_parks_lite.shp")
-
 ## Loading functions -----------------------------------------------------------
 
 # The UI and servers for each section are stored in these function scripts:
@@ -140,10 +137,15 @@ server <- function(input, output, session) {
         position = "top-left",
         orientation = "vertical"
       ) |>
-      
+      # add polygon source
+      mapgl::add_pmtiles_source(
+        id = "bcparks-source",
+        url = "https://object-arbutus.cloud.computecanada.ca/bq-io/blitz-the-gap/bcparks_polygons.pmtiles"
+      ) |>
       # add BC Parks polygons
-      add_fill_layer(id = "bcparks_poly",
-                     source = parks,
+      add_fill_layer(id = "bcparks-layer",
+                     source = "bcparks-source",
+                     source_layer = 'BCParks',
                      fill_color = "#badea9",
                      fill_outline_color = "transparent",
                      fill_opacity = 0.5, 
